@@ -45,14 +45,17 @@ Kode ini memenuhi (bahkan melebihi) syarat minimal 2 *interface* untuk penangana
 * **Fungsi:** Mendeteksi aksi "Klik" pada tombol. Saat tombol diklik, method `actionPerformed(ActionEvent e)` akan mengecek tombol mana yang ditekan, lalu memanggil *method* logika yang sesuai (seperti `tambahData()`, `editData()`, dll).
 
 
-2. **`MouseListener` via `MouseAdapter` (Interface ke-2)**
+2. **`MouseListener` `MouseAdapter` (Interface ke-2)**
 * **Implementasi:** Diterapkan pada `tableStok` (JTable).
 * **Fungsi:** Mendeteksi klik *mouse* pada area tabel. Melalui method `mouseClicked(MouseEvent e)`, baris tabel yang diklik akan dibaca datanya, kemudian teks tersebut dikirim (di-set) kembali ke dalam `JTextField` dan `JComboBox`. Ini mempermudah proses Edit dan Hapus.
 
 
-3. **`KeyListener` via `KeyAdapter` (Interface ke-3 / Nilai Plus)**
+3. **`KeyListener` `KeyAdapter` (Interface ke-3 / Nilai Plus)**
 * **Implementasi:** Diterapkan pada `txtJumlah` (JTextField).
 * **Fungsi:** Memvalidasi ketikan pengguna melalui keyboard. Saat pengguna mengetik sesuatu (`keyTyped(KeyEvent e)`), program mengecek apakah karakternya angka atau bukan. Jika bukan angka (misal: huruf), perintah `e.consume()` dipanggil untuk menolak input tersebut masuk ke kotak teks.
 
-
+### Screenshots
+![Tampilan GUI Bakery](Screenshot(1).png)
+![Tampilan GUI Bakery](Screenshot(2).png)
+![Tampilan GUI Bakery](Screenshot(3).png)
 
